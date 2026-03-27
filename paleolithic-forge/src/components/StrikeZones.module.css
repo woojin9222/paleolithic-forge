@@ -1,0 +1,35 @@
+.wrap {
+  display: flex;
+  gap: 6px;
+}
+
+.zone {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(138, 122, 98, 0.3);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 0.6rem;
+  color: var(--stone);
+  transition: all 0.25s;
+}
+
+.hit {
+  border-color: var(--fire);
+  color: var(--ember);
+  background: rgba(232, 115, 42, 0.13);
+  box-shadow: 0 0 8px rgba(232, 115, 42, 0.28);
+}
+
+.miss {
+  border-color: #3a3a3a;
+  color: #3a3a3a;
+  opacity: 0.4;
+}
+
+.pending {
+  /* default */
+}

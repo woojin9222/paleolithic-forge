@@ -1,0 +1,98 @@
+.root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--earth);
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+  background: linear-gradient(to bottom, rgba(26, 18, 8, 0.96), transparent);
+}
+
+.title {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  color: var(--stone-lt);
+  text-shadow: 0 1px 8px rgba(232, 115, 42, 0.25);
+}
+
+.stageLbl {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.13em;
+  color: var(--fire);
+  padding: 3px 10px;
+  border: 1px solid rgba(232, 115, 42, 0.38);
+  border-radius: 2px;
+}
+
+/* Quality */
+.qualBar {
+  position: absolute;
+  top: 52px; right: 20px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.qualLbl {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  color: var(--stone);
+  opacity: 0.75;
+}
+
+.qualTrack {
+  width: 76px; height: 5px;
+  background: rgba(138, 122, 98, 0.15);
+  border: 1px solid rgba(138, 122, 98, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.qualFill {
+  height: 100%;
+  background: linear-gradient(90deg, #5ab85a, #d4c040);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+/* Canvas */
+.canvasWrap {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+/* HUD */
+.hud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 18px;
+  background: linear-gradient(to top, rgba(20, 12, 4, 0.96), transparent);
+}
+
+.hint {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--stone);
+  letter-spacing: 0.04em;
+  min-height: 1em;
+}
