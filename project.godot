@@ -16,6 +16,7 @@ config/features=PackedStringArray("4.2", "GL Compatibility")
 GameManager="*res://autoload/GameManager.gd"
 WorldGenerator="*res://autoload/WorldGenerator.gd"
 TimeManager="*res://autoload/TimeManager.gd"
+JobSystem="*res://autoload/JobSystem.gd"
 
 [display]
 
